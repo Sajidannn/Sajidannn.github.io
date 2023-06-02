@@ -8,24 +8,36 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="icon" href="../content/logo.png"type="png"></linkrel>
   <style>
-    .circle-button {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #3688f4;
-      color: #fff;
-      text-align: center;
-      line-height: 50px;
-      position: fixed;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
     ol > li > p{
   font-weight: normal;
 }
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-wrapper .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .footer-wrapper .button-wrapper {
+    justify-content: flex-start; /* Tombol di pojok kiri */
+  }
+  .footer-wrapper .button-wrapper-right {
+    justify-content: flex-end; /* Tombol di pojok kanan */
+  }
+  .footer-wrapper .button-wrapper .button,
+  .footer-wrapper .button-wrapper-right .button {
+    margin: 20px; /* Memberikan margin atas dan bawah */
+    color: #000;
+    text-decoration: none;
+  }
+  footer {
+    background-color: #fde9aa;
+    border-top: 1px solid #000; /* Menambahkan garis hitam tipis di atas footer */
+    padding-top: 20px; /* Memberikan padding atas */
+    padding-bottom: 20px; /* Memberikan padding bawah */
+  }
   </style>
 </head>
 
@@ -56,7 +68,7 @@
 
       <section class="bg-light py-5" style = "background-image: url(../content/walpaper2.jpg);">
     <!-- Content -->
-  <div class="container mt-4">
+  <div class="container mt-4" style="padding: 0 70px;">
     <h1>Manfaat dari Informasi Fakta di Media Sosial</h1>
     <p style="font-size: larger;">Halo teman-teman! Sekarang kita akan belajar tentang bagaimana kita bisa mendapatkan manfaat dari informasi fakta di media sosial (sosmed) dengan bahasa yang menyenangkan!
     </p>  
@@ -76,14 +88,18 @@
            <p style="font-size: larger;">Namun, kita harus selalu berhati-hati dan kritis terhadap informasi yang kita temukan di sosmed. Pastikan kita memverifikasi sumber, memeriksa kebenaran informasi, dan memilih akun-akun yang terpercaya. Dengan cara ini, kita bisa mendapatkan manfaat yang sebenarnya dari informasi fakta di sosmed.</p>
           
           <p style="font-size: larger;">Jadi, dengan memanfaatkan informasi fakta dengan bijak, sosmed bisa menjadi alat yang berguna untuk belajar, berbagi, dan terhubung dengan dunia di sekitar kita. Selamat belajar dan eksplorasi di sosmed, teman-teman!</p>
-  <a href="materi4.html" class="circle-button">>></a>
-  <a href="materi2.html" style="left: 20px" class="circle-button">&lt;&lt;</a>
 </section>
-  <!-- Footer -->
-  <footer class="bg-dark text-light text-center py-3">
-    <p>Hak Cipta &copy; 2023 Website Saya. All rights reserved.</p>
-  </footer>
-
+<footer>
+  <div class="container footer-wrapper">
+    <div class="button-wrapper">
+      <a href="materi2.html" class="button">&lt;&lt; Materi Sebelumnya </a>
+    </div>
+    <h3 class="title">Manfaat dari Informasi Fakta</h3>
+    <div class="button-wrapper-right">
+      <a href="materi4.html" class="button"> Materi selanjutnya &gt;&gt;</a>
+    </div>
+  </div>
+</footer>
   <!-- Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
