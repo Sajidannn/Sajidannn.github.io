@@ -1,5 +1,8 @@
 /* CSS for screens larger than 600px */
 body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
   position: relative;
   background-image: url(content/walpaper2.jpg);
